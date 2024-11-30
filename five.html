@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+        img {
+          width: 100%;
+        }
+        @media (max-width: 600px) {
+          .gallery {
+            grid-template-columns: 1fr;
+          }
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+<div class="gallery">
+    <img src="photo1.jfif" alt="Photo 1">
+    <img src="photo2.jfif" alt="Photo 2">
+    <img src="photo3.jfif" alt="Photo 3">
+    <img src="photo4.jfif" alt="Photo 4">
+  </div>
+  
+</body>
+</html>
